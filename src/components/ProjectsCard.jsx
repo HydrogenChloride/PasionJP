@@ -64,9 +64,9 @@ const ProjectsCard = (value) => {
                 <img src={closeBlue} alt="close" onClick={() => toggleTab(0)} className="sm:hidden w-[20px] h-[20px]"/>
               </div>
               <div className="flex flex-col justify-between h-full">
-                <div className="flex flex-wrap justify-center py-4 font-poppins font-semibold text-[20px] text-center leading-[27px] text-white">
+                <div className="flex flex-wrap justify-center py-4 font-poppins font-semibold text-[20px] text-center leading-[27px] text-white"> 
                   <img src={projects[toggleModal].image} alt="Project Image" className="w-[100%] max-w-[400px] object-contain"/>
-                </div>
+                </div>  
                 <div className="flex flex-row justify-center px-8 pt-2">
                   <div className="max-w-[200px] h-[40px] rounded-l-sm border-2 border-cyan-400 p-[2px] cursor-pointer w-full">
                     <a href={projects[toggleModal].demo} target="_blank" rel="noopener noreferrer">

@@ -2,6 +2,8 @@ import { abouts } from '../constants';
 import styles, { layout } from '../style';
 import Button from './Button';
 import { file, profile } from '../assets';
+import Pdf from '../assets/PasionJP_Resume.pdf';
+
 
 const AboutsCard = ({icon, title, content, index}) => (
   <div className={`flex flex-col items-center justify-center sm:p-6 p-2 rounded-[20px] feature-card`}>
@@ -37,7 +39,9 @@ const About = () => {
             ))}
           </div>
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.</p>
-          <Button styles="mt-10" value="Download CV" svg={file} />
+          <a href={Pdf} target='_blank' rel='noopener noreferrer'>
+            <Button styles="mt-10" value="View CV" svg={file} />
+          </a>
         </div>
       </section>
     </div>

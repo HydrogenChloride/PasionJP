@@ -11,7 +11,7 @@ import briefcase from "./briefcase.svg";
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
-import twitter from "./twitter.svg";
+import github from "./github.svg";
 import msgArrow from "./msgArrow.svg";
 import facebookBlue from "./facebookBlue.svg";
 import linkedinBlue from "./linkedinBlue.svg";
@@ -48,7 +48,6 @@ export {
     clients,
     close,
     facebook,
-    instagram,
     linkedin,
     menu,
     people01,
@@ -56,7 +55,7 @@ export {
     people03,
     profile,
     briefcase,
-    twitter,
+    github,
     msgArrow,
     facebookBlue,
     linkedinBlue,

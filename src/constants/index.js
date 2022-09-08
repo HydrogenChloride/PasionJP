@@ -1,4 +1,4 @@
-import { award, clients, people01, people02, people03, briefcase, facebook, instagram, linkedin, twitter, facebookBlue, linkedinBlue, githubBlue, css, html, javascript, react, mongo, git, csharp, net, sql, visualstudio, webbrowser, desktop, chart, prototype, mockup} from "../assets";
+import { award, clients, people01, people02, people03, briefcase, facebook, github, linkedin, facebookBlue, linkedinBlue, githubBlue, css, html, javascript, react, mongo, git, csharp, net, sql, visualstudio, webbrowser, desktop, chart, prototype, mockup} from "../assets";
 
 export const navLinks = [
   {
@@ -144,23 +144,18 @@ export const footerLinks = [
 export const socialMedia = [
   {
     id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
+    icon: facebook,
+    link: "https://www.facebook.com/johnpaulfp",
   },
   {
     id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
+    icon: linkedin,
+    link: "https://www.linkedin.com/in/john-paul-pasion-739454246/",
   },
   {
     id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
-    icon: linkedin,
-    link: "https://www.linkedin.com/",
+    icon: github,
+    link: "https://www.instagram.com/",
   },
 ];
 
@@ -168,17 +163,17 @@ export const heroSocials = [
   {
     id: "hero-social-1",
     icon: facebookBlue,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/johnpaulfp",
   },
   {
     id: "hero-social-2",
     icon: linkedinBlue,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/john-paul-pasion-739454246/",
   },
   {
     id: "hero-social-3",
     icon: githubBlue,
-    link: "https://www.github.com/",
+    link: "https://github.com/HydrogenChloride",
   },
 ];
 

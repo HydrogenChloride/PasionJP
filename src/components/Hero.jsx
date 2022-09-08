@@ -2,12 +2,15 @@ import styles from '../style';
 import { profile, msgArrow } from '../assets';
 import Button from './Button';
 import { heroSocials } from '../constants';
+import { InlineWidget } from "react-calendly";
 
 const Hero = () => (
   <section id="home" className={`grid md:grid-cols-6 grid-cols-1 flex md:flex-row flex-col sm:py-16 py-6 sm:px-16 px-6`}>
       <div className="flex flex-col md:flex hidden justify-center">
         {heroSocials.map((social, index) => (
-          <img key={social.id} src={social.icon} alt={social.id} className={`w-[21px] h-[21px] object-contain cursor-pointer ${index !== heroSocials.length -1 ? 'mb-6': 'mb-0' }`}/>
+          <a href={social.link} target="_blank" rel="noopener noreferrer">
+            <img key={social.id} src={social.icon} alt={social.id} className={`w-[21px] h-[21px] object-contain cursor-pointer ${index !== heroSocials.length -1 ? 'mb-6': 'mb-0' }`}/>
+          </a>
         ))}
       </div>
 
@@ -27,7 +30,9 @@ const Hero = () => (
         </div>
 
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>I'm very passionate at full-stack web and software development.</p>
-        <Button styles="mt-10" value="Message Me" svg={msgArrow}/>
+        <a href="https://calendly.com/jppasion/30min" target="_blank" rel="noopener noreferrer"> 
+          <Button styles="mt-10" value="Book a Call" svg={msgArrow}/>
+        </a>
       </div>
 
       <div className={`col-span-2 flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
