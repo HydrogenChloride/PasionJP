@@ -37,6 +37,10 @@ import email from "./email.svg";
 import mobilePhone from "./mobilePhone.svg";
 import messenger from "./messenger.svg";
 import mockup from "./mockup.png";
+import check from "./check.svg";
+import closeBlue from "./closeBlue.svg";
+import launch from "./launch.svg";
+import code from "./code.svg";
 
 export {
     award,
@@ -77,5 +81,9 @@ export {
     email,
     mobilePhone,
     messenger,
-    mockup
+    mockup,
+    check,
+    closeBlue,
+    launch,
+    code
 };

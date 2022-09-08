@@ -4,12 +4,12 @@ import Button from './Button';
 import { file, profile } from '../assets';
 
 const AboutsCard = ({icon, title, content, index}) => (
-  <div className={`flex flex-col items-center justify-center p-6 rounded-[20px] feature-card`}>
+  <div className={`flex flex-col items-center justify-center sm:p-6 p-2 rounded-[20px] feature-card`}>
     <div className={`w-[64px] h-[63px] rounded-full ${styles.flexCenter} bg-dimBlue mb-4`}>
       <img src={icon} alt="icon" className="w-[50%] h-[50%] object-contain"/>
     </div>
-    <div className="flex-1 flex flex-col sm:ml-0 ml-3 justify-center items-center">
-      <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23px]">
+    <div className="flex-1 flex flex-col justify-center items-center">
+      <h4 className="font-poppins font-semibold text-white text-[16px] leading-[23px]">
         {title}
       </h4>
       <p className="font-poppins font-normal text-dimWhite text-[14px] leading-[24px]"> 
@@ -31,7 +31,7 @@ const About = () => {
         </div>
 
         <div className={`${layout.sectionInfo}`}>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="flex grid grid-cols-3 sm:gap-4 gap-2 w-full">
             {abouts.map((about, index) => (
                 <AboutsCard key={about.id}{...about} index={index}/>
             ))}

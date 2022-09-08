@@ -13,6 +13,16 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      borderRadius: {
+        'none': '0',
+        'sm': '10px',
+        DEFAULT: '20px',
+        DEFAULT: '20px',
+        'md': '0.375rem',
+        'lg': '20px',
+        'full': '9999px',
+        'large': '12px',
+      }
     },
     screens: {
       xs: "480px",

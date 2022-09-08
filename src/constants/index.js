@@ -245,38 +245,88 @@ export const skills = [
 
 export const services = [
   {
+    index: 1,
     id: "services-1",
     icon: webbrowser,
     title: "Full-stack Web Development",
+    serviceInfo: "Can develop a full stack web development",
+    serviceDetails: [
+      {
+        detail: "Can produce a UI/UX Design",
+      },
+      {
+        detail: "Can develop a professional website",
+      },
+    ],
   },
   {
+    index: 2,
     id: "services-2",
     icon: desktop,
     title: "Desktop C# .NET Application",
+    serviceInfo: "Can develop a full stack web development",
+    serviceDetails: [
+      {
+        detail: "Can produce a UI/UX Design",
+      },
+      {
+        detail: "Can develop a professional website",
+      },
+    ],
   },
   {
+    index: 3,
     id: "services-3",
     icon: prototype,
     title: "UI/UX Prototyping",
+    serviceInfo: "Can develop a full stack web development",
+    serviceDetails: [
+      {
+        detail: "Can produce a UI/UX Design",
+      },
+      {
+        detail: "Can develop a professional website",
+      },
+    ],
   },
   {
+    index: 4,
     id: "services-4",
     icon: chart,
     title: "Data Analyst",
+    serviceInfo: "Can develop a full stack web development",
+    serviceDetails: [
+      {
+        detail: "Can produce a UI/UX Design",
+      },
+      {
+        detail: "Can develop a professional website",
+      },
+    ],
   },
 ];
 
 export const projects = [
   {
     id: "projects-1",
+    arr: 0,
     image: mockup,
     category: "Website",
     title: "Portfolio Website Template",
+    demo: "https://www.youtube.com/",
+    sourceCode: "https://github.com/HydrogenChloride",
+    techStacks: "HTML, CSS, JAVASCRIPT, GIT",
+    projectDetail: "- Can create a UI/UX Design"
   },
   {
     id: "projects-2",
+    arr: 1,
     image: mockup,
     category: "Desktop",
     title: "Inventory Management System",
+    demo: "https://www.youtube.com/",
+    sourceCode: "https://github.com/HydrogenChloride",
+    techStacks: "C#, .NET, VSCODE, GIT",
+    projectDetail: "- Can create a software \n - Can create a software \n - Can create a software"
   },
 ];
