@@ -9,7 +9,6 @@ import people03 from "./people03.png";
 import profile from "./HeroSectionProfile.png";
 import briefcase from "./briefcase.svg";
 import facebook from "./facebook.svg";
-import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import github from "./github.svg";
 import msgArrow from "./msgArrow.svg";
@@ -41,6 +40,8 @@ import check from "./check.svg";
 import closeBlue from "./closeBlue.svg";
 import launch from "./launch.svg";
 import code from "./code.svg";
+import proj1Img from "./Proj1-image.png";
+import proj2Img from "./Proj2-image.png";
 
 export {
     award,
@@ -84,5 +85,7 @@ export {
     check,
     closeBlue,
     launch,
-    code
+    code,
+    proj1Img,
+    proj2Img
 };

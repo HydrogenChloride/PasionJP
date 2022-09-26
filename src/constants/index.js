@@ -1,4 +1,4 @@
-import { award, clients, people01, people02, people03, briefcase, facebook, github, linkedin, facebookBlue, linkedinBlue, githubBlue, css, html, javascript, react, mongo, git, csharp, net, sql, visualstudio, webbrowser, desktop, chart, prototype, mockup} from "../assets";
+import { award, clients, people01, people02, people03, briefcase, facebook, github, linkedin, facebookBlue, linkedinBlue, githubBlue, css, html, javascript, react, mongo, git, csharp, net, sql, visualstudio, webbrowser, desktop, chart, prototype, mockup, proj1Img, proj2Img} from "../assets";
 
 export const navLinks = [
   {
@@ -14,12 +14,12 @@ export const navLinks = [
     title: "Skills",
   },
   {
-    id: "services",
-    title: "Services",
-  },
-  {
     id: "projects",
     title: "Projects",
+  },
+  {
+    id: "services",
+    title: "Services",
   },
   {
     id: "contact",
@@ -75,72 +75,6 @@ export const feedback = [
   },
 ];
 
-export const footerLinks = [
-  {
-    title: "Useful Links",
-    links: [
-      {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
-      },
-    ],
-  },
-];
-
 export const socialMedia = [
   {
     id: "social-media-1",
@@ -179,7 +113,7 @@ export const heroSocials = [
 
 export const skills = [
   {
-    title: "Web Developer",
+    title: "Web Development",
     techStacks: [
       {
         skill: "HTML",
@@ -208,7 +142,7 @@ export const skills = [
     ],
   },
   {
-    title: "Desktop App Developer",
+    title: "Desktop App Development",
     techStacks: [
       {
         skill: "C#",
@@ -243,7 +177,7 @@ export const services = [
     index: 1,
     id: "services-1",
     icon: webbrowser,
-    title: "Full-stack Web Development",
+    title: "Full-Stack Web Development",
     serviceInfo: "Can develop a full stack web development",
     serviceDetails: [
       {
@@ -305,23 +239,27 @@ export const projects = [
   {
     id: "projects-1",
     arr: 0,
-    image: mockup,
+    image: proj1Img,
     category: "Website",
     title: "Portfolio Website Template",
-    demo: "https://www.youtube.com/",
-    sourceCode: "https://github.com/HydrogenChloride",
-    techStacks: "HTML, CSS, JAVASCRIPT, GIT",
-    projectDetail: "- Can create a UI/UX Design"
+    demo: "https://pasionjp.github.io/Porfolio-Website-Template/",
+    demoTitle: "Portfolio Website Template by PasionJP (Demo)",
+    embed: "https://www.youtube.com/embed/1nnHtawiNOI",
+    sourceCode: "https://github.com/PasionJP/Porfolio-Website-Template",
+    techStacks: "HTML, CSS, JAVASCRIPT",
+    projectDetail: "A portfolio template that can be used by other developers, students, or freelancers that wants to build and customize their own website while learning HTML, CSS and Javascript."
   },
   {
     id: "projects-2",
     arr: 1,
-    image: mockup,
+    image: proj2Img,
     category: "Desktop",
-    title: "Inventory Management System",
-    demo: "https://www.youtube.com/",
-    sourceCode: "https://github.com/HydrogenChloride",
-    techStacks: "C#, .NET, VSCODE, GIT",
-    projectDetail: "- Can create a software \n - Can create a software \n - Can create a software"
+    title: "Inventory Management System with POS",
+    demo: "https://www.youtube.com/watch?v=YF4-9VH9r3c",
+    demoTitle: "Inventory Managemnt System with POS by PasionJP (Demo)",
+    embed: "https://www.youtube.com/embed/YF4-9VH9r3c",
+    sourceCode: "https://github.com/PasionJP/Inventory-Management-System",
+    techStacks: "C#, .NET, SQL",
+    projectDetail: "A POS System with a built-in Inventory Management System. It can be used to facilitate transactions of your business, manage your product inventory, manage your employees, and it also displays the analytics of your business' sales report. It is an all-in-one system that can assist you in controlling and operating your business with ease to increase your revenue."
   },
 ];

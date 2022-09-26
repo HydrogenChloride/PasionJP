@@ -2,12 +2,13 @@ import styles from './style';
 import { Navbar, Hero, About, Skills, Projects, Services, Testimonials, Contact, Footer } from './components';
 
 const App = () => (
+  
   <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Navbar />
-      </div>
+    <div className="fixed w-full z-[20]">
+      <Navbar />
     </div>
+        
+      
 
     <div className={`bg-primary ${styles.flexStart} m-5`}>
       <div className={`${styles.boxWidth}`}>
@@ -21,7 +22,7 @@ const App = () => (
         <Skills />
         <Projects />
         <Services />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
         <Footer />
       </div>

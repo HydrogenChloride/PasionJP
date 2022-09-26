@@ -14,9 +14,9 @@ const Hero = () => (
         ))}
       </div>
 
-      <div className="col-span-3">
+      <div className="col-span-3 pt-6">
         <div className="flex flex-row justify-between items-center w-full"> 
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[64px] text-[42px] text-white ss:leading-[100px] leading-[75px]">
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[64px] text-[42px] tracking-widest text-white ss:leading-[100px] leading-[75px]">
             JP Pasion
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
@@ -24,12 +24,12 @@ const Hero = () => (
         </div>
 
         <div className="justify-between items-center w-full">
-          <h2 className="font-poppins font-normal ss:text-[42px] text-[32px] text-dimWhite ss:leading-[100px] leading-[75px] w-full">
-              Full-stack developer
+          <h2 className="font-poppins font-normal ss:text-[28px] text-[24px] text-dimWhite ss:leading-[100px] leading-[75px] w-full">
+              Full Stack Developer
           </h2>
         </div>
 
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>I'm very passionate at full-stack web and software development.</p>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>I am an aspiring software engineer passionate about learning various tech stacks that can help build useful tools.</p>
         <a href="https://calendly.com/jppasion/30min" target="_blank" rel="noopener noreferrer"> 
           <Button styles="mt-10" value="Book a Call" svg={msgArrow}/>
         </a>

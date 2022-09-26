@@ -1,25 +1,30 @@
 import { projects } from '../constants';
-import styles, { layout }  from '../style';
+import styles from '../style';
 import { arrow, closeBlue, launch, code } from "../assets";
-import { useEffect, useState } from "react";
-import { mockup } from '../assets';
+import { useState } from "react";
 
 const ProjectsCard = (value) => {
   const [tab, setTab] = useState("Website Desktop");
   const [toggleState, setToggleState] = useState(0);
   const [toggleModal, setToggleModal] = useState(0);
-
+  const video = document.getElementById("demo");
+  
   function activeProject(targ){
     setTab(targ)
   }
 
   const toggleTab = (index) => {
     setToggleState(index)
+    videoStopper()
   }
   
   const toggleModalCard = (index) => {
     setToggleModal(index)
     toggleTab(1)
+  }
+
+  function videoStopper() {
+    video.src = video.src
   }
 
   return(
@@ -34,7 +39,7 @@ const ProjectsCard = (value) => {
         </div>
         <div className="flex justify-center gap-4 sm:py-8 py-6 flex sm:flex-row flex-wrap sm:py-10">
           {projects.filter(project => tab.includes(project.category)).map((filteredProject) => (
-            <div className="grid grid-row-3 flex flex-col rounded-[20px] my-5 skills-card">
+            <div className="grid grid-row-3 flex flex-col rounded-[20px] my-5 skills-card" onClick={() => {toggleModalCard(filteredProject.arr)}}>
               <div key={filteredProject.key} className="flex flex-wrap py-6 max-w-[300px]">
                 <div className="flex flex-col ss:my-0 my-4 min-w-[100px] px-6 py-1">
                   <div className={`w-[100%] h-[100%] ${styles.flexCenter} mb-4`}>
@@ -45,7 +50,7 @@ const ProjectsCard = (value) => {
                     {filteredProject.title}
                   </h4>
                  
-                  <div className="flex flex-row font-poppins font-normal text-[14px] leading-[27px] text-dimWhite more__button" onClick={() => {toggleModalCard(filteredProject.arr)}}> 
+                  <div className="flex flex-row font-poppins font-normal text-[14px] leading-[27px] text-dimWhite more__button"> 
                     <span>View More</span>
                     <img src={arrow} alt="arrow" className="more__button-icon"/>
                   </div>
@@ -65,7 +70,7 @@ const ProjectsCard = (value) => {
               </div>
               <div className="flex flex-col justify-between h-full">
                 <div className="flex flex-wrap justify-center py-4 font-poppins font-semibold text-[20px] text-center leading-[27px] text-white"> 
-                  <img src={projects[toggleModal].image} alt="Project Image" className="w-[100%] max-w-[400px] object-contain"/>
+                  <iframe id="demo" width="520" height="293" src={projects[toggleModal].embed} title={projects[toggleModal].embedTitle} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>  
                 <div className="flex flex-row justify-center px-8 pt-2">
                   <div className="max-w-[200px] h-[40px] rounded-l-sm border-2 border-cyan-400 p-[2px] cursor-pointer w-full">
@@ -104,7 +109,7 @@ const ProjectsCard = (value) => {
               <div className="flex flex-wrap justify-center py-4 font-poppins font-semibold text-[20px] text-center leading-[27px] text-white">
                 {projects[toggleModal].title}
               </div>
-              <div className="flex flex-wrap justify-center font-poppins font-normal text-[16px] text-center leading-[27px] text-dimWhite">
+              <div className="flex flex-wrap justify-center font-poppins font-normal text-[16px] text-center leading-[27px] text-dimWhite max-w-[300px]">
                 {projects[toggleModal].projectDetail}
               </div>
             </div>

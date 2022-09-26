@@ -23,11 +23,11 @@ const AboutsCard = ({icon, title, content, index}) => (
 
 const About = () => {
   return (
-    <div id="about" className="flex flex-col items-center">
+    <div id="about" className={ `${styles.paddingY} ${styles.flexCenter} flex-col relative`}>
       <h1 className="font-poppins font-semibold text-white text-[48px] justify-center">
           About Me
       </h1>
-      <section id="abouts" className={`grid md:grid-cols-2 grid-cols-1 flex ${layout.section}`}>
+      <section id="abouts" className={`grid md:grid-cols-2 grid-cols-1 flex`}>
         <div className={`${layout.sectionImg} flex-row md:flex hidden`}>
           <img src={profile} alt="profile" />
         </div>
@@ -38,7 +38,7 @@ const About = () => {
                 <AboutsCard key={about.id}{...about} index={index}/>
             ))}
           </div>
-          <p className={`${styles.paragraph} max-w-[470px] mt-5`}>With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.</p>
+          <p className={`flex justify-center ${styles.paragraph} mt-5 text-justify w-full`}>I am currently in 3rd year pursuing Bachelor of Science in Computer Science at Technological University of the Philippines. <br /><br /> I started learning to code before college, building IoT and websites as a hobby. Since then, I took a leap and I started to learn various skills such as data analysis, web development, and desktop application development. Aside from coding, I can also do video editing, photo editing, and a little bit of 3D modelling.</p>
           <a href={Pdf} target='_blank' rel='noopener noreferrer'>
             <Button styles="mt-10" value="View CV" svg={file} />
           </a>

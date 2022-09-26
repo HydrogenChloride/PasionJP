@@ -7,7 +7,7 @@ const SkillsCard = () => (
         <div className="flex items-center justify-center flex-col px-5 pt-8 rounded-[20px] max-w-[100%] sm:mr-5 my-5 skills-card w-full">
           <div key={skill.key} className="flex flex-wrap">
             <div className="flex flex-col ss:my-0 my-4 min-w-[150px] px-6">
-              <h4 className="flex items-center justify-center font-poppins font-semibold text-[22px] leading-[27px] text-white flex-wrap">
+              <h4 className="flex items-center text-center justify-center font-poppins font-semibold text-[22px] leading-[27px] text-white">
                 {skill.title}
               </h4>
 
