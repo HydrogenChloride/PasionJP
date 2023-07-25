@@ -1,4 +1,4 @@
-import { award, clients, people01, people02, people03, briefcase, facebook, github, linkedin, facebookBlue, linkedinBlue, githubBlue, css, html, javascript, react, mongo, git, csharp, net, sql, visualstudio, webbrowser, desktop, chart, prototype, mockup, proj1Img, proj2Img} from "../assets";
+import { award, clients, people01, people02, people03, briefcase, facebook, github, linkedin, facebookBlue, linkedinBlue, githubBlue, css, html, javascript, react, mongo, git, csharp, net, sql, visualstudio, none, webbrowser, desktop, chart, prototype, mockup, proj1Img, proj2Img, proj3Img} from "../assets";
 
 export const navLinks = [
   {
@@ -32,7 +32,7 @@ export const abouts = [
     id: "about-1",
     icon: award,
     title: "Experience",
-    content: "2+ Years",
+    content: "3+ Years",
   },
   {
     id: "about-2",
@@ -165,8 +165,8 @@ export const skills = [
         icon: visualstudio,
       },
       {
-        skill: "VSC",
-        icon: visualstudio,
+        skill: "",
+        icon: none,
       },
     ],
   },
@@ -256,10 +256,23 @@ export const projects = [
     category: "Desktop",
     title: "Inventory Management System with POS",
     demo: "https://www.youtube.com/watch?v=YF4-9VH9r3c",
-    demoTitle: "Inventory Managemnt System with POS by PasionJP (Demo)",
+    demoTitle: "Inventory Management System with POS (Demo)",
     embed: "https://www.youtube.com/embed/YF4-9VH9r3c",
     sourceCode: "https://github.com/PasionJP/Inventory-Management-System",
     techStacks: "C#, .NET, SQL",
     projectDetail: "A POS System with a built-in Inventory Management System. It can be used to facilitate transactions of your business, manage your product inventory, manage your employees, and it also displays the analytics of your business' sales report. It is an all-in-one system that can assist you in controlling and operating your business with ease to increase your revenue."
+  },
+  {
+    id: "projects-3",
+    arr: 0,
+    image: proj3Img,
+    category: "Website",
+    title: "Kinship Verification",
+    demo: "https://www.youtube.com/watch?v=MeBTXjugsfQ",
+    demoTitle: "KinUnite - Embracing Family Likeness (Demo)",
+    embed: "https://www.youtube.com/embed/MeBTXjugsfQ",
+    sourceCode: "https://github.com/PasionJP/Kinship-Relationship-Prediction",
+    techStacks: "Python, Flask, OpenCV, Tensorflow, HTML, CSS, Javascript",
+    projectDetail: "A kinship verification website that utilizes state-of-the-art machine learning technology to identify whether your precious child bears a closer resemblance to their devoted mother or their cherished father."
   },
 ];

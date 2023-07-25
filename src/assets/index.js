@@ -26,6 +26,7 @@ import csharp from "./CSharp.svg";
 import net from "./net.svg";
 import sql from "./SQL.svg";
 import visualstudio from "./visual studio.svg";
+import none from "./none.svg";
 import webbrowser from "./webbrowser.svg";
 import desktop from "./desktop.svg";
 import prototype from "./prototype.svg";
@@ -42,6 +43,7 @@ import launch from "./launch.svg";
 import code from "./code.svg";
 import proj1Img from "./Proj1-image.png";
 import proj2Img from "./Proj2-image.png";
+import proj3Img from "./Proj3-image.png";
 
 export {
     award,
@@ -72,6 +74,7 @@ export {
     net,
     sql,
     visualstudio,
+    none,
     webbrowser,
     desktop,
     prototype,
@@ -87,5 +90,6 @@ export {
     launch,
     code,
     proj1Img,
-    proj2Img
+    proj2Img,
+    proj3Img
 };
