@@ -1,4 +1,4 @@
-import { award, clients, people01, people02, people03, briefcase, facebook, github, linkedin, facebookBlue, linkedinBlue, githubBlue, css, html, javascript, react, mongo, git, csharp, net, sql, visualstudio, none, webbrowser, desktop, chart, prototype, mockup, proj1Img, proj2Img, proj3Img} from "../assets";
+import { award, clients, people01, people02, people03, briefcase, facebook, github, linkedin, facebookBlue, linkedinBlue, githubBlue, css, html, javascript, react, mongo, git, csharp, net, sql, visualstudio, none, webbrowser, desktop, chart, prototype, mockup, proj1Img, proj2Img, proj3Img, proj4Img, proj5Img, proj6Img} from "../assets";
 
 export const navLinks = [
   {
@@ -264,7 +264,7 @@ export const projects = [
   },
   {
     id: "projects-3",
-    arr: 0,
+    arr: 2,
     image: proj3Img,
     category: "Website",
     title: "Kinship Verification",
@@ -275,4 +275,43 @@ export const projects = [
     techStacks: "Python, Flask, OpenCV, Tensorflow, HTML, CSS, Javascript",
     projectDetail: "A kinship verification website that utilizes state-of-the-art machine learning technology to identify whether your precious child bears a closer resemblance to their devoted mother or their cherished father."
   },
+  {
+    id: "projects-4",
+    arr: 3,
+    image: proj4Img,
+    category: "Website",
+    title: "Portfolio Optimization",
+    demo: "https://www.youtube.com/watch?v=Xwo3Ni7_GjY",
+    demoTitle: "OptiPlex - Portfolio Optimization using Simplex Algorithm",
+    embed: "https://www.youtube.com/embed/Xwo3Ni7_GjY",
+    sourceCode: "https://github.com/PasionJP/Portfolio-Optimization-using-Simplex-Algorithm",
+    techStacks: "Python, Flask, HTML, CSS",
+    projectDetail: "Portfolio optimization using linear programming is like finding the perfect mix of ingredients for a recipe, where each ingredient represents a different investment option. Linear programming helps balance risk and return, just like adjusting ingredients to create the most delicious dish, ensuring your investment portfolio meets your financial goals while minimizing potential losses.."
+  },
+  {
+    id: "projects-5",
+    arr: 4,
+    image: proj5Img,
+    category: "Website",
+    title: "Route Optimization",
+    demo: "https://www.youtube.com/watch?v=2om_Z2yc0sE",
+    demoTitle: "RoutePlanner - Solving the Travelling Salesman Problem using Swarm Intelligence",
+    embed: "https://www.youtube.com/embed/2om_Z2yc0sE",
+    sourceCode: "https://github.com/PasionJP/Route-Optimization-using-Swarm-Intelligence",
+    techStacks: "Python, Flask, HTML, CSS, WazeAPI",
+    projectDetail: "Discover the future of travel planning with our Swarm Intelligence-powered website, which optimizes routes for efficiency, saving you time, money, and reducing your environmental impact. Say goodbye to the Traveling Salesman Problem complexity and hello to effortless, eco-friendly journeys."
+  },
+  {
+    id: "projects-6",
+    arr: 5,
+    image: proj6Img,
+    category: "Website",
+    title: "Educational Video Game Recommendation System",
+    demo: "https://www.youtube.com/watch?v=4fC8pzA6mmA",
+    demoTitle: "EducGames - Educational Video Game Recommendation System",
+    embed: "https://www.youtube.com/embed/4fC8pzA6mmA",
+    sourceCode: "https://github.com/PasionJP/Educational-Video-Game-Recommendation-System",
+    techStacks: "Python, Flask, MySQL, HTML, CSS",
+    projectDetail: "Imagine you have a wise old mentor who knows your learning style like the back of their hand. This educational video game recommendation system is like that mentor, but even better - it suggests engaging games tailored just for you, making learning a fun and personalized adventure."
+  }
 ];

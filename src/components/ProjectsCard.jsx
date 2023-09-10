@@ -62,13 +62,13 @@ const ProjectsCard = (value) => {
       </div>
 
       <div className={toggleState !==  0 ? "modalCard active-modal" : "modalCard"}>
-        <div className="flex grid sm:grid-cols-2 grid-cols-1 md:grid-rows-1 grid-rows-1 rounded skills-card overflow-y-auto">
+        <div className="flex grid sm:grid-cols-2 grid-cols-1 md:grid-rows-1 grid-rows-1 rounded skills-card">
           <div className="flex flex-col"> 
             <div className="py-6 px-6 rounded-[20px] max-w-[100%] skills-card h-full">
               <div className="flex flex-col items-end">
                 <img src={closeBlue} alt="close" onClick={() => toggleTab(0)} className="sm:hidden w-[20px] h-[20px]"/>
               </div>
-              <div className="flex flex-col justify-between h-full">
+              <div className="flex flex-col justify-between h-full overflow-y-auto sm:max-h-full max-h-80">
                 <div className="flex flex-wrap justify-center py-4 font-poppins font-semibold text-[20px] text-center leading-[27px] text-white"> 
                   <iframe id="demo" width="520" height="293" src={projects[toggleModal].embed} title={projects[toggleModal].embedTitle} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>  
@@ -105,7 +105,7 @@ const ProjectsCard = (value) => {
             <div className="flex flex-col items-end">
               <img src={closeBlue} alt="close" onClick={() => toggleTab(0)} className="flex flex-row sm:flex hidden w-[20px] h-[20px]"/>
             </div>
-            <div className="flex flex-col items-center justify-center sm:h-full h-full">
+            <div className="flex flex-col items-center sm:justify-center overflow-y-auto sm:max-h-full max-h-52">
               <div className="flex flex-wrap justify-center py-4 font-poppins font-semibold text-[20px] text-center leading-[27px] text-white">
                 {projects[toggleModal].title}
               </div>

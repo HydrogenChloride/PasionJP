@@ -2,10 +2,9 @@ import styles from '../style';
 import { profile, msgArrow } from '../assets';
 import Button from './Button';
 import { heroSocials } from '../constants';
-import { InlineWidget } from "react-calendly";
 
 const Hero = () => (
-  <section id="home" className={`grid md:grid-cols-6 grid-cols-1 flex md:flex-row flex-col sm:py-16 py-6 sm:px-16 px-6`}>
+  <section id="home" className={`grid md:grid-cols-6 grid-cols-1 flex md:flex-row flex-col sm:py-16 py-6 sm:px-16 px-6 h-screen content-center`}>
       <div className="flex flex-col md:flex hidden justify-center">
         {heroSocials.map((social, index) => (
           <a href={social.link} target="_blank" rel="noopener noreferrer">

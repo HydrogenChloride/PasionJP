@@ -44,6 +44,9 @@ import code from "./code.svg";
 import proj1Img from "./Proj1-image.png";
 import proj2Img from "./Proj2-image.png";
 import proj3Img from "./Proj3-image.png";
+import proj4Img from "./Proj4-image.png";
+import proj5Img from "./Proj5-image.png";
+import proj6Img from "./Proj6-image.png";
 
 export {
     award,
@@ -91,5 +94,8 @@ export {
     code,
     proj1Img,
     proj2Img,
-    proj3Img
+    proj3Img,
+    proj4Img,
+    proj5Img,
+    proj6Img
 };
