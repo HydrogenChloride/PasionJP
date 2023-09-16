@@ -105,7 +105,7 @@ const ProjectsCard = (value) => {
             <div className="flex flex-col items-end">
               <img src={closeBlue} alt="close" onClick={() => toggleTab(0)} className="flex flex-row sm:flex hidden w-[20px] h-[20px]"/>
             </div>
-            <div className="flex flex-col items-center sm:justify-center overflow-y-auto sm:max-h-full max-h-52">
+            <div className="flex flex-col items-center sm:justify-center overflow-y-auto">
               <div className="flex flex-wrap justify-center py-4 font-poppins font-semibold text-[20px] text-center leading-[27px] text-white">
                 {projects[toggleModal].title}
               </div>

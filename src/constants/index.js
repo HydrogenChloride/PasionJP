@@ -1,4 +1,4 @@
-import { award, clients, people01, people02, people03, briefcase, facebook, github, linkedin, facebookBlue, linkedinBlue, githubBlue, css, html, javascript, react, mongo, git, csharp, net, sql, visualstudio, none, webbrowser, desktop, chart, prototype, mockup, proj1Img, proj2Img, proj3Img, proj4Img, proj5Img, proj6Img} from "../assets";
+import { award, clients, people01, people02, people03, briefcase, facebook, github, linkedin, facebookBlue, linkedinBlue, githubBlue, css, html, javascript, react, mongo, git, csharp, net, sql, visualstudio, none, webbrowser, desktop, chart, game, mockup, proj1Img, proj2Img, proj3Img, proj4Img, proj5Img, proj6Img} from "../assets";
 
 export const navLinks = [
   {
@@ -32,7 +32,7 @@ export const abouts = [
     id: "about-1",
     icon: award,
     title: "Experience",
-    content: "3+ Years",
+    content: "4+ Years",
   },
   {
     id: "about-2",
@@ -89,7 +89,7 @@ export const socialMedia = [
   {
     id: "social-media-3",
     icon: github,
-    link: "https://www.instagram.com/",
+    link: "https://github.com/pasionjp",
   },
 ];
 
@@ -107,7 +107,7 @@ export const heroSocials = [
   {
     id: "hero-social-3",
     icon: githubBlue,
-    link: "https://github.com/HydrogenChloride",
+    link: "https://github.com/pasionjp",
   },
 ];
 
@@ -178,13 +178,22 @@ export const services = [
     id: "services-1",
     icon: webbrowser,
     title: "Full-Stack Web Development",
-    serviceInfo: "Can develop a full stack web development",
+    serviceInfo: "End-to-end web development services, from frontend design to backend functionality",
     serviceDetails: [
       {
-        detail: "Can produce a UI/UX Design",
+        detail: "Can craft dynamic and responsive websites that adapt seamlessly to various screen sizes and devices",
       },
       {
-        detail: "Can develop a professional website",
+        detail: "Can architect and develop robust backend systems using cutting-edge technologies for efficient data handling and processing.",
+      },
+      {
+        detail: "Can provide tailored solutions to match the client's unique requirements",
+      },
+      {
+        detail: "Can optimize websites for speed and performance",
+      },
+      {
+        detail: "Can create intuitive user interfaces with a focus on user experience and accessibility",
       },
     ],
   },
@@ -193,28 +202,31 @@ export const services = [
     id: "services-2",
     icon: desktop,
     title: "Desktop C# .NET Application",
-    serviceInfo: "Can develop a full stack web development",
+    serviceInfo: "Deliver tailored, high-performance desktop C# .NET application",
     serviceDetails: [
       {
-        detail: "Can produce a UI/UX Design",
+        detail: "Can create feature-rich Windows applications",
       },
       {
-        detail: "Can develop a professional website",
+        detail: "Can optimize and maintain existing C# .NET desktop applications, enhancing functionality and addressing any issues",
+      },
+      {
+        detail: "Can offer expert consultation and support throughout the entire software development lifecycle, from concept to deployment",
       },
     ],
   },
   {
     index: 3,
     id: "services-3",
-    icon: prototype,
-    title: "UI/UX Prototyping",
-    serviceInfo: "Can develop a full stack web development",
+    icon: game,
+    title: "Game Development",
+    serviceInfo: "Unity-based game development",
     serviceDetails: [
       {
-        detail: "Can produce a UI/UX Design",
+        detail: "Can design and develop custom gameplay mechanics",
       },
       {
-        detail: "Can develop a professional website",
+        detail: "Can handle the entire game development pipeline, from concept to release",
       },
     ],
   },
@@ -222,14 +234,17 @@ export const services = [
     index: 4,
     id: "services-4",
     icon: chart,
-    title: "Data Analyst",
-    serviceInfo: "Can develop a full stack web development",
+    title: "Data Science",
+    serviceInfo: "Can provide personalized data-driven solutions to address specific challenges",
     serviceDetails: [
       {
-        detail: "Can produce a UI/UX Design",
+        detail: "Can leverage advanced statistical techniques to extract actionable insights from complex datasets.",
       },
       {
-        detail: "Can develop a professional website",
+        detail: "Can clean and preprocess data to ensure its quality and suitability for analysis",
+      },
+      {
+        detail: "Can create data visualizations and dashboards for intuitive data exploration and decision-making",
       },
     ],
   },

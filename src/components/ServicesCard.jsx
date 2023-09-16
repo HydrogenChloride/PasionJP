@@ -43,12 +43,12 @@ const ServicesCard = () => {
       </div>
 
       <div className={toggleState !==  0 ? "modalCard active-modal" : "modalCard"}>
-        <div className="grid grid-row-3 flex flex-col py-6 px-6 rounded-[20px] max-w-[100%] my-5 skills-card">
+        <div className="grid grid-row-3 flex flex-col py-6 px-6 rounded-[20px] max-w-xl my-5 skills-card">
           <div className="mb-2">
             <div className="flex flex-row justify-end">
               <img src={closeBlue} alt="close" onClick={() => toggleTab(0)} className="w-[20px] h-[20px]"/>
             </div>
-            <div className="flex flex-col justify-center max-w-[300px] sm:mx-16 mx-0">
+            <div className="flex flex-col justify-center sm:mx-16 mx-0">
               <div className="flex flex-wrap justify-center py-4 font-poppins font-semibold text-[20px] text-center leading-[27px] text-white">
                 {services[toggleModal].title}
               </div>
@@ -56,7 +56,7 @@ const ServicesCard = () => {
                 {services[toggleModal].serviceInfo}
               </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col overflow-y-auto sm:max-h-full max-h-80">
               {services[toggleModal].serviceDetails.map((serviceDetail) => (
                 <ul className="list-none mt-4 flex-wrap">
                     <li key={serviceDetail.index}>

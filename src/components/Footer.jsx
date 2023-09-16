@@ -9,7 +9,7 @@ const Footer = () => (
           Copyright
         </p>
         <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white ml-6">
-          2022 PasionJP. All Rights Reserved.
+          2023 PasionJP. All Rights Reserved.
         </p>
       </div>
       

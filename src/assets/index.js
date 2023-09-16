@@ -29,7 +29,7 @@ import visualstudio from "./visual studio.svg";
 import none from "./none.svg";
 import webbrowser from "./webbrowser.svg";
 import desktop from "./desktop.svg";
-import prototype from "./prototype.svg";
+import game from "./game.svg";
 import chart from "./chart.svg";
 import arrow from "./arrow.svg";
 import quotes from "./quotes.svg";
@@ -80,7 +80,7 @@ export {
     none,
     webbrowser,
     desktop,
-    prototype,
+    game,
     chart,
     arrow,
     quotes,

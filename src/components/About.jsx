@@ -38,7 +38,10 @@ const About = () => {
                 <AboutsCard key={about.id}{...about} index={index}/>
             ))}
           </div>
-          <p className={`flex justify-center ${styles.paragraph} mt-5 text-justify w-full`}>I am currently in 3rd year pursuing Bachelor of Science in Computer Science at Technological University of the Philippines. <br /><br /> I started learning to code before college, building IoT and websites as a hobby. Since then, I took a leap and I started to learn various skills such as data analysis, web development, and desktop application development. Aside from coding, I can also do video editing, photo editing, and a little bit of 3D modelling.</p>
+          <p className={`flex justify-center ${styles.paragraph} mt-5 text-justify w-full`}>I'm JP Pasion, and I'm truly passionate about the exciting world of technology. I'm currently in my fourth year, pursuing a Bachelor of Science in Computer Science at the Technological University of the Philippines. But my journey into the tech world started long before college. It all began as a hobby, just me and my love for coding.
+          <br /><br /> Over the years, that hobby has blossomed into a dynamic set of skills that cover a wide range of cool stuff. I've gone from tinkering with IoT projects to creating snazzy, responsive websites. I've also dabbled in data analysis, web development, and even tried my hand at building desktop applications. But my interests don't stop at coding; I've ventured into the creative side of things too. I've played around with video and photo editing, and I've dived into the world of 3D modeling, crafting and bringing my creations to life through 3D printing.
+          <br /><br /> What defines my journey is an unquenchable curiosity. I'm always eager to learn and improve, pushing the boundaries of what I can achieve. I'm on a mission to explore and conquer the exciting universe of technology!
+          </p>
           <a href={Pdf} target='_blank' rel='noopener noreferrer'>
             <Button styles="mt-10" value="View CV" svg={file} />
           </a>

@@ -28,7 +28,7 @@ const Hero = () => (
           </h2>
         </div>
 
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>I am an aspiring software engineer passionate about learning various tech stacks that can help build useful tools.</p>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>As an aspiring software engineer, I harness the power of code to transform ideas into digital reality, while continually pushing the boundaries of innovation.</p>
         <a href="https://calendly.com/jppasion/30min" target="_blank" rel="noopener noreferrer"> 
           <Button styles="mt-10" value="Book a Call" svg={msgArrow}/>
         </a>
